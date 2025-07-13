@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Camere – La Ancuța'n Bucovina</title>
+  <link rel="stylesheet" href="camere.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">La Ancuța'n Bucovina</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Acasă</a>
+        <a href="camere.html">Cazare</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- INTRODUCERE -->
+  <section class="intro">
+    <h1>Camerele noastre</h1>
+    <p>
+      Pensiunea dispune de <strong>două etaje</strong>, fiecare cu câte <strong>4 camere duble matrimoniale</strong>, confortabile și luminoase, cu baie proprie și priveliști superbe.
+    </p>
+  </section>
+
+  <!-- ETAJ 1 -->
+  <section class="etaj">
+    <h2>Etajul 1 – Camerele 1-4</h2>
+    <div class="image-stack">
+      <img src="images/camera_etaj1_1.jpg" alt="Camera Etaj 1 - 1">
+      <img src="images/camera_etaj1_2.jpg" alt="Camera Etaj 1 - 2">
+    </div>
+    <div class="image-stack">
+      <img src="images/baie_etaj1.jpg" alt="Baie Etaj 1">
+      <img src="images/priveliste_etaj1.jpg" alt="Priveliste Etaj 1">
+    </div>
+    <ul class="details">
+      <li>🛏️ Cameră dublă matrimonială</li>
+      <li>🚿 Baie proprie modernă</li>
+      <li>🪟 Balcon cu priveliște spre grădină/pădure</li>
+      <li>🧼 Design tradițional cu accente moderne</li>
+    </ul>
+  </section>
+
+  <!-- ETAJ 2 -->
+  <section class="etaj">
+    <h2>Etajul 2 – Camerele 5-8</h2>
+    <div class="image-stack">
+      <img src="images/camera_etaj2_1.jpg" alt="Camera Etaj 2 - 1">
+      <img src="images/camera_etaj2_2.jpg" alt="Camera Etaj 2 - 2">
+    </div>
+    <div class="image-stack">
+      <img src="images/baie_etaj2.jpg" alt="Baie Etaj 2">
+      <img src="images/priveliste_etaj2.jpg" alt="Priveliste Etaj 2">
+    </div>
+    <ul class="details">
+      <li>🛏️ Camere duble matrimoniale</li>
+      <li>🚿 Baie proprie modernă</li>
+      <li>🌄 Priveliște spre pădure sau dealuri</li>
+      <li>🪟 Toate camerele au balcon</li>
+    </ul>
+  </section>
+
+  <!-- RECEPȚIE -->
+  <section class="etaj">
+    <h2>🛋️ Recepție & Zonă de relaxare – Parter</h2>
+    <div class="image-stack">
+      <img src="images/receptie1.jpg" alt="Recepție - vedere generală">
+      <img src="images/receptie2.jpg" alt="Zona de relaxare">
+    </div>
+    <ul class="details">
+      <li>🛋️ Canapele confortabile pentru relaxare</li>
+      <li>☕ Spațiu prietenos pentru cafea sau conversații</li>
+      <li>🍽️ Posibilitatea de a lua masa într-un cadru informal</li>
+      <li>📍 Locație centrală: imediat la intrare, lângă sala de mese</li>
+    </ul>
+  </section>
+
+  <!-- SALĂ DE MESE -->
+  <section class="etaj">
+    <h2>🍽️ Sala de mese</h2>
+    <div class="image-stack">
+      <img src="images/mese1.jpg" alt="Sala de mese 1">
+      <img src="images/mese2.jpg" alt="Sala de mese 2">
+      <img src="images/mese3.jpg" alt="Sala de mese 3">
+      <img src="images/mese4.jpg" alt="Sala de mese 4">
+    </div>
+    <ul class="details">
+      <li>🍴 Spațiu generos pentru servit masa</li>
+      <li>☕ Cuptor, frigider, aparat de cafea și ustensile</li>
+      <li>🎉 Ideală pentru mese în familie sau grupuri</li>
+      <li>📍 Se află la demisol, accesibilă din toată pensiunea</li>
+    </ul>
+  </section>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

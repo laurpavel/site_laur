@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – La Ancuța’n Bucovina</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-logo">La Ancuța’n Bucovina</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Acasă</a>
+        <a href="camere.html">Cazare</a>
+        <a href="galerie.html">Galerie</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="contact-wrapper">
+  <div class="contact-container">
+    
+    <!-- HARTA -->
+    <div class="contact-map">
+      <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6363484763007!2d25.867099875584927!3d47.514106666460755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4735a70431b70883%3A0x7b373aa79776c986!2sPensiunea%20La%20Ancuta-n%20Bucovina!5e0!3m2!1sen!2sro!4v1752422022301!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- TEXT -->
+    <div class="contact-info">
+      <h2>📍 Ne găsești în inima Bucovinei</h2>
+      <p>Contactează-ne pentru rezervări sau informații</p>
+
+      <h3>📞 Contact</h3>
+      <p>📞 <a href="tel:+40752632389">+40 752 632 389</a></p>
+      <p>📞 <a href="tel:+40743791565">+40 743 791 565</a></p>
+
+      <h3>📧 Email</h3>
+      <p><a href="mailto:laurpavel4@gmail.com">laurpavel4@gmail.com</a></p>
+
+      <h3>📍 Adresă</h3>
+      <p>Strada Voroneț 301A, Voroneț 725301,<br>Gura Humorului, Suceava, România</p>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
