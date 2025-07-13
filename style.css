@@ -1,0 +1,581 @@
+/* === GENERAL === */
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #212529;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* === HERO SECTION === */
+/* === HERO SECTION === */
+.hero-booking {
+  position: relative;
+  background-image: url("images/frontal1.jpg"); /* implicit: desktop */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 8%; /* mai sus, pe cer */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: black;
+  background: rgba(255, 255, 255, 0.7); /* fundal semi-transparent pentru lizibilitate */
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-size: 35px; 
+}
+
+
+.hero-overlay .hero-titles {
+  background: rgba(0, 85, 142, 0.75);
+  padding: 25px 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.hero-overlay h1 {
+  font-size: 36px;
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+.hero-overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffeaa7;
+}
+
+
+
+/* === FORMULAR BOOKING === */
+.booking-form {
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  margin: -80px auto 40px auto; /* îl ridică peste marginea imaginii */
+  padding: 25px;
+  z-index: 3;
+  position: relative;
+}
+
+.booking-form input[type="date"] {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+
+.booking-form .form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555b64;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 12px;
+  background: #d9a441;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.booking-form button:hover {
+  background: #c69234;
+}
+
+/* === ABOUT SECTION === */
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.about-wrapper {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.about-header h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #212529;
+}
+
+.about-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; /* centrează totul pe orizontală */
+  gap: 3rem;
+  padding: 0 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 0rem;
+}
+
+
+.about-images {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-images img {
+  width: 100%;
+  height: auto;
+  max-width: 600px;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: nowrap;
+  padding: 0 2rem;
+}
+
+.about-text {
+  max-width: 600px;
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.about-text h5 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* === Phone Buttons === */
+.phone-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.phone-buttons a {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background 0.2s ease;
+}
+
+.phone-buttons a.yellow {
+  background-color: #f0ad00;
+  color: white;
+}
+
+.phone-buttons a.black {
+  background-color: #212529;
+  color: white;
+}
+
+.phone-buttons a:hover {
+  opacity: 0.85;
+}
+
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .about-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-images img {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .phone-buttons {
+    justify-content: center;
+  }
+}
+
+
+
+
+  .about-text {
+    max-width: 90%;
+  }
+
+
+
+
+
+/* MOTIVE */
+
+.motive-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+}
+
+
+.motive-section {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.motive-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.motive-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.motive-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.motive-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.motive-image {
+  flex: 1 1 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.motive-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.motive-boxes {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.motive-box {
+  background-color: #f4f4f4;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
+.motive-box h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.motive-box p {
+  margin: 0;
+  color: #333;
+}
+
+.motive-box.active {
+  background-color: #ffe58a; /* galben pal */
+  color: #111;
+}
+
+
+.motive-box.active h4 {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .motive-content {
+    flex-direction: column;
+  }
+
+  .motive-image,
+  .motive-boxes {
+    flex: 1 1 100%;
+  }
+}
+
+
+.navbar {
+  background-color: white;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #555b64;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #d9a441;
+}
+
+.nav-links a.active {
+  color: #d9a441;
+}
+
+
+/* --- Responsive Mobile --- */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .hamburger {
+    order: 2;
+  }
+}
+
+
+
+
+
+/* === RESPONSIVE: HERO === */
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero-booking {
+    height: 100vh; /* păstrează imaginea mare pe mobil */
+    padding: 0 1rem;
+    background-image: url("images/frontal1.jpg"); /* imagine 9:16 */
+    background-position: top;
+  }
+
+  .hero-overlay {
+    top: 5%;
+  font-size: 26px; 
+}
+
+  .booking-form {
+    margin: -60px auto 30px auto;
+    padding: 20px;
+    width: 90vw;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .booking-form input,
+  .booking-form select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .booking-form input[type="date"] {
+    font-size: 16px; /* font mai mic, evită overflow */
+  }
+}
+
+
+
+/* === CALL TO ACTION SECTION === */
+.cta-section {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.cta-title {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Butoane CTA */
+.cta-section .btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+/* Stil principal */
+.cta-section .btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.cta-section .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Stil outline */
+.cta-section .btn-outline {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.cta-section .btn-outline:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+
