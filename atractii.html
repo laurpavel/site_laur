@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atracții – La Ancuța</title>
+  <link rel="stylesheet" href="atractii.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-logo">La Ancuța’n Bucovina</div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Acasă</a>
+      <a href="camere.html">Cazare</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="atractii.html">Atracții</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="atractii-wrapper">
+  <h1>Atracții în apropiere</h1>
+  <p>Descoperă cele mai frumoase experiențe din zona Ariniș – Gura Humorului.</p>
+
+  <!-- Atracții -->
+  <section class="atractie">
+    <img src="images/tiroliana.jpg" alt="Tiroliana Ariniș" loading="lazy" />
+    <h2>📍 MEGATIROLIANA ARINIȘ – Zbor peste Bucovina! 🪂</h2>
+    <p>Pregătit pentru o doză de adrenalină?</p>
+    <ul>
+      <li>🔹 Peste 1 km de distracție</li>
+      <li>🔹 Priveliști uimitoare</li>
+      <li>🔹 Aventură pentru toate vârstele</li>
+    </ul>
+  </section>
+
+  <section class="atractie">
+    <img src="images/voronet.jpg" alt="Mănăstirea Voroneț" loading="lazy" />
+    <h2>🛕 MĂNĂSTIREA VORONEȚ – Capela Sixtină a Estului ✨</h2>
+    <p>Descoperă faimosul „albastru de Voroneț”.</p>
+    <ul>
+      <li>🔹 Construită în 1488</li>
+      <li>🔹 Fresce spectaculoase</li>
+      <li>🔹 Patrimoniu UNESCO</li>
+    </ul>
+  </section>
+
+  <section class="atractie">
+    <img src="images/parc_aventura.jpg" alt="Parc Aventura Ariniș" loading="lazy" />
+    <h2>🌲 PARC DE AVENTURI ARINIȘ – Testează-ți limitele! 🧗‍♀</h2>
+    <p>Trasee suspendate, tiroliene, distracție maximă.</p>
+    <ul>
+      <li>🔹 Trasee pe dificultăți</li>
+      <li>🔹 Activități pentru grupuri</li>
+    </ul>
+  </section>
+
+  <section class="atractie">
+    <img src="images/fantani.png" alt="Fântânile Muzicale" loading="lazy" />
+    <h2>🎶 FÂNTÂNILE MUZICALE – Seară de magie ✨</h2>
+    <p>Jeturi colorate și muzică sincronizată.</p>
+    <ul>
+      <li>🔹 Spectacole de seară</li>
+      <li>🔹 Atmosferă romantică</li>
+    </ul>
+  </section>
+
+  <section class="atractie">
+    <img src="images/sanie.jpg" alt="Sanie de vară" loading="lazy" />
+    <h2>🛷 SANIA DE VARĂ – Viteză și voie bună! 🚀</h2>
+    <p>Traseu amețitor, controlabil și sigur.</p>
+    <ul>
+      <li>🔹 Pentru toate vârstele</li>
+    </ul>
+  </section>
+
+
+
+
+  <section class="atractie">
+    <img src="images/hobbit.png" alt="Casele Hobbitilor" loading="lazy" />
+    <h2>🏡 CASELE HOBBIȚILOR – Poveste în pădure 🌿</h2>
+    <p>Inspirate din „Stăpânul Inelelor”, ideale pentru poze.</p>
+    <ul>
+      <li>🔹 Iubite de copii și adulți</li>
+    </ul>
+  </section>
+
+  <section class="atractie">
+    <img src="images/piscina_arinis.jpg" alt="Piscina Ariniș" loading="lazy" />
+    <h2>🏊 PISCINA ARINIȘ – Răcoare și relaxare 💦</h2>
+    <p>Loc curat, modern, cu facilități complete.</p>
+    <ul>
+      <li>🔹 Zone copii & adulți</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>

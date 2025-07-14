@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.hamburger {
+  font-size: 1.6rem;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.atractii-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.atractii-wrapper h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.atractie {
+  background: #f8f8f8;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.atractie img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: block;
+  text-align: center;
+}
+
+
+.atractie h2 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+
+.atractie ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.atractie ul li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .atractie img {
+    max-height: 200px;
+  }
+}
